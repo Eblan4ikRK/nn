@@ -1,0 +1,32 @@
+# КОНФИГУРАЦИЯ РОУТЕРОВ CORTEX.
+
+# Решение капчи (CCS).
+captcha_solving:
+  enable: true
+  routers:
+    - model: "models/captcha_solving/CCSvT"
+      path: "test"
+      description: "Тестовая модель распознавания капчи."
+    - model: "models/captcha_solving/CCS-VK"
+      path: "vk"
+      description: "Модель для распознавания капчи VK."
+    - model: "models/captcha_solving/CCS-MC"
+      path: "mc"
+      description: "Модель распознавания капчи для серверов Minecraft."
+
+# Диалоговая система (CDR).
+dialogue_replying:
+  enable: true
+  routers:
+    - model: "models/dialogue_replying/CDR-T"
+      path: "test"
+      description: "Тестовая диалоговая модель."
+    - model: "models/dialogue_replying/CDR-Arith"
+      path: "arith"
+      description: "Диалоговая модель для арифметики."
+
+# Классификация текста (CTC).
+# На данный момент не реализовано.
+text_classification:
+  enable: false
+  routers:
